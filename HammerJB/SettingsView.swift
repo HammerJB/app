@@ -7,19 +7,23 @@
 
 import SwiftUI
 
-struct SettingsView: View {
-    @State private var playMusic = false
-    @State private var enableTweaks = false
+class SettingsData: ObservableObject {
+    @Published var playMusic = false
+    @Published var enableTweaks = false
     var kernelExploits = ["KFD", "MDC"]
-    @State private var selectedKernelExploit = "KFD"
+    @Published var selectedKernelExploit = "KFD"
     var puafPages = ["16", "32", "64", "128", "256", "512", "1024", "2048"]
-    @State private var selectedPuafPages = "2048"
+    @Published var selectedPuafPages = "2048"
     var puafMethods = ["physpuppet", "smith"]
-    @State private var selectedPuafMethod = "smith"
+    @Published var selectedPuafMethod = "smith"
     var kreadMethods = ["kqueue_workloop_ctl", "sem_open"]
-    @State private var selectedKreadMethod = "sem_open"
+    @Published var selectedKreadMethod = "sem_open"
     var kwriteMethods = ["dup", "sem_open"]
-    @State private var selectedKwriteMethod = "sem_open"
+    @Published var selectedKwriteMethod = "sem_open"
+}
+
+struct SettingsView: View {
+    @ObservedObject var settingsData: SettingsData
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -30,33 +34,33 @@ struct SettingsView: View {
             
             List {
                 Section(header: Text("Jailbreak Options"), content: {
-                    Toggle("Play music", isOn: $playMusic)
-                    Toggle("Enable tweaks", isOn: $enableTweaks)
+                    Toggle("Play music", isOn: $settingsData.playMusic)
+                    Toggle("Enable tweaks", isOn: $settingsData.enableTweaks)
                 })
                 Section(header: Text("Exploit Options"), content: {
-                    Picker("Kernel Exploit", selection: $selectedKernelExploit) {
-                        ForEach(kernelExploits, id: \.self) {
+                    Picker("Kernel Exploit", selection: $settingsData.selectedKernelExploit) {
+                        ForEach(settingsData.kernelExploits, id: \.self) {
                             Text($0)
                         }
                     }.pickerStyle(.segmented)
-                    if selectedKernelExploit == "KFD" {
-                        Picker("puaf pages", selection: $selectedPuafPages) {
-                            ForEach(puafPages, id: \.self) {
+                    if settingsData.selectedKernelExploit == "KFD" {
+                        Picker("puaf pages", selection: $settingsData.selectedPuafPages) {
+                            ForEach(settingsData.puafPages, id: \.self) {
                                 Text($0)
                             }
                         }
-                        Picker("puaf method", selection: $selectedPuafMethod) {
-                            ForEach(puafMethods, id: \.self) {
+                        Picker("puaf method", selection: $settingsData.selectedPuafMethod) {
+                            ForEach(settingsData.puafMethods, id: \.self) {
                                 Text($0)
                             }
                         }
-                        Picker("kread method", selection: $selectedKreadMethod) {
-                            ForEach(kreadMethods, id: \.self) {
+                        Picker("kread method", selection: $settingsData.selectedKreadMethod) {
+                            ForEach(settingsData.kreadMethods, id: \.self) {
                                 Text($0)
                             }
                         }
-                        Picker("kwrite method", selection: $selectedKwriteMethod) {
-                            ForEach(kwriteMethods, id: \.self) {
+                        Picker("kwrite method", selection: $settingsData.selectedKwriteMethod) {
+                            ForEach(settingsData.kwriteMethods, id: \.self) {
                                 Text($0)
                             }
                         }

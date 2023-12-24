@@ -25,21 +25,25 @@ func playSound() {
 }
 
 struct JailbreakView: View {
-    @State var logText: String = "Jailbreak not started"
+    @State var logText: String = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately."
+    @StateObject var settingsData = SettingsData()
+    @State private var buttonEnabled = true
     
     func jailbreak() {
-        playSound()
+        if settingsData.playMusic == true {
+            playSound()
+        }
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            logText = "Installing virus..."
+            logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)...\n[*] Installing virus..."
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.5) {
-            logText = "Extracting passwords..."
+            logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)...\n[*] Installing virus...\n[*] Extracting passwords..."
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 8.5) {
-            logText = "Deleting /var..."
+            logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)...\n[*] Installing virus...\n[*] Extracting passwords...\n[*] Deleting /var..."
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.5) {
-            logText = ":troll:"
+            logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)...\n[*] Installing virus...\n[*] Extracting passwords...\n[*] Deleting /var...\nJailbreak successful! Reboot to finish."
         }
     }
     
@@ -50,7 +54,8 @@ struct JailbreakView: View {
                 .fontWeight(.bold)
                 .padding()
             Text(logText)
-                .font(.system(.body, design: .monospaced))
+                .font(.system(size: 14, design: .monospaced))
+                .multilineTextAlignment(.center)
                 .padding()
                 .foregroundColor(.white)
                 .cornerRadius(20)
@@ -59,11 +64,19 @@ struct JailbreakView: View {
                         .stroke(.pink, lineWidth: 5)
                 )
             Button(action: {
-                logText = "Exploiting..."
+                logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)..."
                 jailbreak()
+                buttonEnabled = false
+                
             }) {
                 Text("Jailbreak")
-            }.buttonStyle(.bordered).tint(.red).padding()
+            }.buttonStyle(.bordered).tint(.red).padding().disabled(!buttonEnabled)
+            Text("Please ensure your exploit settings are correct before jailbreaking")
+                .multilineTextAlignment(.center)
+                .padding()
+                .foregroundColor(.red)
         }
     }
 }
+
+

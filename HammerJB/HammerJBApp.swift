@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct HammerJBApp: App {
+    @ObservedObject var settingsData = SettingsData()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(settingsData: settingsData)
         }
     }
 }
-
