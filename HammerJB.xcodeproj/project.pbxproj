@@ -11,30 +11,10 @@
 		435D22792B378D0700EA9229 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22782B378D0700EA9229 /* ContentView.swift */; };
 		435D227B2B378D0900EA9229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227A2B378D0900EA9229 /* Assets.xcassets */; };
 		435D227E2B378D0900EA9229 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227D2B378D0900EA9229 /* Preview Assets.xcassets */; };
-		435D22882B378D0A00EA9229 /* HammerJBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22872B378D0A00EA9229 /* HammerJBTests.swift */; };
-		435D22922B378D0A00EA9229 /* HammerJBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22912B378D0A00EA9229 /* HammerJBUITests.swift */; };
-		435D22942B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */; };
 		43B89A2F2B37D31900611EE9 /* JailbreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A2E2B37D31900611EE9 /* JailbreakView.swift */; };
 		43B89A312B37D34500611EE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A302B37D34500611EE9 /* SettingsView.swift */; };
 		43B89A332B37E16C00611EE9 /* infectious_ncs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		435D22842B378D0A00EA9229 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 435D226B2B378D0700EA9229 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 435D22722B378D0700EA9229;
-			remoteInfo = HammerJB;
-		};
-		435D228E2B378D0A00EA9229 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 435D226B2B378D0700EA9229 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 435D22722B378D0700EA9229;
-			remoteInfo = HammerJB;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		435D22732B378D0700EA9229 /* HammerJB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerJB.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +22,7 @@
 		435D22782B378D0700EA9229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		435D227A2B378D0900EA9229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435D227D2B378D0900EA9229 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		435D22832B378D0A00EA9229 /* HammerJBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HammerJBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		435D22872B378D0A00EA9229 /* HammerJBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBTests.swift; sourceTree = "<group>"; };
-		435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HammerJBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		435D22912B378D0A00EA9229 /* HammerJBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITests.swift; sourceTree = "<group>"; };
 		435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43B89A2E2B37D31900611EE9 /* JailbreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakView.swift; sourceTree = "<group>"; };
@@ -54,20 +32,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		435D22702B378D0700EA9229 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435D22802B378D0A00EA9229 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435D228A2B378D0A00EA9229 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				435D22732B378D0700EA9229 /* HammerJB.app */,
-				435D22832B378D0A00EA9229 /* HammerJBTests.xctest */,
-				435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,42 +118,6 @@
 			productReference = 435D22732B378D0700EA9229 /* HammerJB.app */;
 			productType = "com.apple.product-type.application";
 		};
-		435D22822B378D0A00EA9229 /* HammerJBTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 435D229A2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBTests" */;
-			buildPhases = (
-				435D227F2B378D0A00EA9229 /* Sources */,
-				435D22802B378D0A00EA9229 /* Frameworks */,
-				435D22812B378D0A00EA9229 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				435D22852B378D0A00EA9229 /* PBXTargetDependency */,
-			);
-			name = HammerJBTests;
-			productName = HammerJBTests;
-			productReference = 435D22832B378D0A00EA9229 /* HammerJBTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		435D228C2B378D0A00EA9229 /* HammerJBUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 435D229D2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBUITests" */;
-			buildPhases = (
-				435D22892B378D0A00EA9229 /* Sources */,
-				435D228A2B378D0A00EA9229 /* Frameworks */,
-				435D228B2B378D0A00EA9229 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				435D228F2B378D0A00EA9229 /* PBXTargetDependency */,
-			);
-			name = HammerJBUITests;
-			productName = HammerJBUITests;
-			productReference = 435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,14 +130,6 @@
 				TargetAttributes = {
 					435D22722B378D0700EA9229 = {
 						CreatedOnToolsVersion = 15.1;
-					};
-					435D22822B378D0A00EA9229 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 435D22722B378D0700EA9229;
-					};
-					435D228C2B378D0A00EA9229 = {
-						CreatedOnToolsVersion = 15.1;
-						TestTargetID = 435D22722B378D0700EA9229;
 					};
 				};
 			};
@@ -229,8 +147,6 @@
 			projectRoot = "";
 			targets = (
 				435D22722B378D0700EA9229 /* HammerJB */,
-				435D22822B378D0A00EA9229 /* HammerJBTests */,
-				435D228C2B378D0A00EA9229 /* HammerJBUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,20 +159,6 @@
 				435D227E2B378D0900EA9229 /* Preview Assets.xcassets in Resources */,
 				43B89A332B37E16C00611EE9 /* infectious_ncs.mp3 in Resources */,
 				435D227B2B378D0900EA9229 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435D22812B378D0A00EA9229 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435D228B2B378D0A00EA9229 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,37 +176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		435D227F2B378D0A00EA9229 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				435D22882B378D0A00EA9229 /* HammerJBTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		435D22892B378D0A00EA9229 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				435D22942B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift in Sources */,
-				435D22922B378D0A00EA9229 /* HammerJBUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		435D22852B378D0A00EA9229 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 435D22722B378D0700EA9229 /* HammerJB */;
-			targetProxy = 435D22842B378D0A00EA9229 /* PBXContainerItemProxy */;
-		};
-		435D228F2B378D0A00EA9229 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 435D22722B378D0700EA9229 /* HammerJB */;
-			targetProxy = 435D228E2B378D0A00EA9229 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		435D22952B378D0A00EA9229 /* Debug */ = {
@@ -491,78 +363,6 @@
 			};
 			name = Release;
 		};
-		435D229B2B378D0A00EA9229 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerJB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HammerJB";
-			};
-			name = Debug;
-		};
-		435D229C2B378D0A00EA9229 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerJB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HammerJB";
-			};
-			name = Release;
-		};
-		435D229E2B378D0A00EA9229 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HammerJB;
-			};
-			name = Debug;
-		};
-		435D229F2B378D0A00EA9229 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = HammerJB;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -580,24 +380,6 @@
 			buildConfigurations = (
 				435D22982B378D0A00EA9229 /* Debug */,
 				435D22992B378D0A00EA9229 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		435D229A2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				435D229B2B378D0A00EA9229 /* Debug */,
-				435D229C2B378D0A00EA9229 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		435D229D2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				435D229E2B378D0A00EA9229 /* Debug */,
-				435D229F2B378D0A00EA9229 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
