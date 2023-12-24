@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		435D22772B378D0700EA9229 /* HammerJBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22762B378D0700EA9229 /* HammerJBApp.swift */; };
+		435D22792B378D0700EA9229 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22782B378D0700EA9229 /* ContentView.swift */; };
+		435D227B2B378D0900EA9229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227A2B378D0900EA9229 /* Assets.xcassets */; };
+		435D227E2B378D0900EA9229 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227D2B378D0900EA9229 /* Preview Assets.xcassets */; };
+		435D22882B378D0A00EA9229 /* HammerJBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22872B378D0A00EA9229 /* HammerJBTests.swift */; };
+		435D22922B378D0A00EA9229 /* HammerJBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22912B378D0A00EA9229 /* HammerJBUITests.swift */; };
+		435D22942B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */; };
+		43B89A2F2B37D31900611EE9 /* JailbreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A2E2B37D31900611EE9 /* JailbreakView.swift */; };
+		43B89A312B37D34500611EE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A302B37D34500611EE9 /* SettingsView.swift */; };
+		43B89A332B37E16C00611EE9 /* infectious_ncs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		435D22842B378D0A00EA9229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435D226B2B378D0700EA9229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435D22722B378D0700EA9229;
+			remoteInfo = HammerJB;
+		};
+		435D228E2B378D0A00EA9229 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435D226B2B378D0700EA9229 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 435D22722B378D0700EA9229;
+			remoteInfo = HammerJB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		435D22732B378D0700EA9229 /* HammerJB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerJB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435D22762B378D0700EA9229 /* HammerJBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBApp.swift; sourceTree = "<group>"; };
+		435D22782B378D0700EA9229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		435D227A2B378D0900EA9229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435D227D2B378D0900EA9229 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		435D22832B378D0A00EA9229 /* HammerJBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HammerJBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		435D22872B378D0A00EA9229 /* HammerJBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBTests.swift; sourceTree = "<group>"; };
+		435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HammerJBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		435D22912B378D0A00EA9229 /* HammerJBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITests.swift; sourceTree = "<group>"; };
+		435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43B89A2E2B37D31900611EE9 /* JailbreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakView.swift; sourceTree = "<group>"; };
+		43B89A302B37D34500611EE9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = infectious_ncs.mp3; path = ../../Music/infectious_ncs.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		435D22702B378D0700EA9229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D22802B378D0A00EA9229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D228A2B378D0A00EA9229 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		435D226A2B378D0700EA9229 = {
+			isa = PBXGroup;
+			children = (
+				43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */,
+				435D22752B378D0700EA9229 /* HammerJB */,
+				435D22862B378D0A00EA9229 /* HammerJBTests */,
+				435D22902B378D0A00EA9229 /* HammerJBUITests */,
+				435D22742B378D0700EA9229 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		435D22742B378D0700EA9229 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				435D22732B378D0700EA9229 /* HammerJB.app */,
+				435D22832B378D0A00EA9229 /* HammerJBTests.xctest */,
+				435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		435D22752B378D0700EA9229 /* HammerJB */ = {
+			isa = PBXGroup;
+			children = (
+				435D22762B378D0700EA9229 /* HammerJBApp.swift */,
+				435D22782B378D0700EA9229 /* ContentView.swift */,
+				43B89A2E2B37D31900611EE9 /* JailbreakView.swift */,
+				43B89A302B37D34500611EE9 /* SettingsView.swift */,
+				435D227A2B378D0900EA9229 /* Assets.xcassets */,
+				435D227C2B378D0900EA9229 /* Preview Content */,
+			);
+			path = HammerJB;
+			sourceTree = "<group>";
+		};
+		435D227C2B378D0900EA9229 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				435D227D2B378D0900EA9229 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		435D22862B378D0A00EA9229 /* HammerJBTests */ = {
+			isa = PBXGroup;
+			children = (
+				435D22872B378D0A00EA9229 /* HammerJBTests.swift */,
+			);
+			path = HammerJBTests;
+			sourceTree = "<group>";
+		};
+		435D22902B378D0A00EA9229 /* HammerJBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				435D22912B378D0A00EA9229 /* HammerJBUITests.swift */,
+				435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */,
+			);
+			path = HammerJBUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		435D22722B378D0700EA9229 /* HammerJB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435D22972B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJB" */;
+			buildPhases = (
+				435D226F2B378D0700EA9229 /* Sources */,
+				435D22702B378D0700EA9229 /* Frameworks */,
+				435D22712B378D0700EA9229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HammerJB;
+			productName = HammerJB;
+			productReference = 435D22732B378D0700EA9229 /* HammerJB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		435D22822B378D0A00EA9229 /* HammerJBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435D229A2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBTests" */;
+			buildPhases = (
+				435D227F2B378D0A00EA9229 /* Sources */,
+				435D22802B378D0A00EA9229 /* Frameworks */,
+				435D22812B378D0A00EA9229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435D22852B378D0A00EA9229 /* PBXTargetDependency */,
+			);
+			name = HammerJBTests;
+			productName = HammerJBTests;
+			productReference = 435D22832B378D0A00EA9229 /* HammerJBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		435D228C2B378D0A00EA9229 /* HammerJBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435D229D2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBUITests" */;
+			buildPhases = (
+				435D22892B378D0A00EA9229 /* Sources */,
+				435D228A2B378D0A00EA9229 /* Frameworks */,
+				435D228B2B378D0A00EA9229 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435D228F2B378D0A00EA9229 /* PBXTargetDependency */,
+			);
+			name = HammerJBUITests;
+			productName = HammerJBUITests;
+			productReference = 435D228D2B378D0A00EA9229 /* HammerJBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		435D226B2B378D0700EA9229 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					435D22722B378D0700EA9229 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					435D22822B378D0A00EA9229 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 435D22722B378D0700EA9229;
+					};
+					435D228C2B378D0A00EA9229 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 435D22722B378D0700EA9229;
+					};
+				};
+			};
+			buildConfigurationList = 435D226E2B378D0700EA9229 /* Build configuration list for PBXProject "HammerJB" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 435D226A2B378D0700EA9229;
+			productRefGroup = 435D22742B378D0700EA9229 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				435D22722B378D0700EA9229 /* HammerJB */,
+				435D22822B378D0A00EA9229 /* HammerJBTests */,
+				435D228C2B378D0A00EA9229 /* HammerJBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		435D22712B378D0700EA9229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435D227E2B378D0900EA9229 /* Preview Assets.xcassets in Resources */,
+				43B89A332B37E16C00611EE9 /* infectious_ncs.mp3 in Resources */,
+				435D227B2B378D0900EA9229 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D22812B378D0A00EA9229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D228B2B378D0A00EA9229 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		435D226F2B378D0700EA9229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435D22792B378D0700EA9229 /* ContentView.swift in Sources */,
+				43B89A312B37D34500611EE9 /* SettingsView.swift in Sources */,
+				43B89A2F2B37D31900611EE9 /* JailbreakView.swift in Sources */,
+				435D22772B378D0700EA9229 /* HammerJBApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D227F2B378D0A00EA9229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435D22882B378D0A00EA9229 /* HammerJBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435D22892B378D0A00EA9229 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435D22942B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift in Sources */,
+				435D22922B378D0A00EA9229 /* HammerJBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		435D22852B378D0A00EA9229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435D22722B378D0700EA9229 /* HammerJB */;
+			targetProxy = 435D22842B378D0A00EA9229 /* PBXContainerItemProxy */;
+		};
+		435D228F2B378D0A00EA9229 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 435D22722B378D0700EA9229 /* HammerJB */;
+			targetProxy = 435D228E2B378D0A00EA9229 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		435D22952B378D0A00EA9229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		435D22962B378D0A00EA9229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		435D22982B378D0A00EA9229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HammerJB/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		435D22992B378D0A00EA9229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HammerJB/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		435D229B2B378D0A00EA9229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerJB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HammerJB";
+			};
+			name = Debug;
+		};
+		435D229C2B378D0A00EA9229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HammerJB.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HammerJB";
+			};
+			name = Release;
+		};
+		435D229E2B378D0A00EA9229 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HammerJB;
+			};
+			name = Debug;
+		};
+		435D229F2B378D0A00EA9229 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HammerJB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		435D226E2B378D0700EA9229 /* Build configuration list for PBXProject "HammerJB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D22952B378D0A00EA9229 /* Debug */,
+				435D22962B378D0A00EA9229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435D22972B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D22982B378D0A00EA9229 /* Debug */,
+				435D22992B378D0A00EA9229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435D229A2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D229B2B378D0A00EA9229 /* Debug */,
+				435D229C2B378D0A00EA9229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435D229D2B378D0A00EA9229 /* Build configuration list for PBXNativeTarget "HammerJBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435D229E2B378D0A00EA9229 /* Debug */,
+				435D229F2B378D0A00EA9229 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 435D226B2B378D0700EA9229 /* Project object */;
+}
