@@ -26,56 +26,55 @@ struct SettingsView: View {
     @ObservedObject var settingsData: SettingsData
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
-            Text("Settings")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
-            
-            List {
-                Section(header: Text("Jailbreak Options"), content: {
-                    Toggle("Play music", isOn: $settingsData.playMusic)
-                    Toggle("Enable tweaks", isOn: $settingsData.enableTweaks)
-                })
-                Section(header: Text("Exploit Options"), content: {
-                    Picker("Kernel Exploit", selection: $settingsData.selectedKernelExploit) {
-                        ForEach(settingsData.kernelExploits, id: \.self) {
-                            Text($0)
-                        }
-                    }.pickerStyle(.segmented)
-                    if settingsData.selectedKernelExploit == "KFD" {
-                        Picker("puaf pages", selection: $settingsData.selectedPuafPages) {
-                            ForEach(settingsData.puafPages, id: \.self) {
+            VStack(alignment: .leading, spacing: 16) {
+                Text("Settings")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                List {
+                    Section(header: Text("Jailbreak Options"), content: {
+                        Toggle("Play music", isOn: $settingsData.playMusic)
+                        Toggle("Enable tweaks", isOn: $settingsData.enableTweaks)
+                    })
+                    Section(header: Text("Exploit Options"), content: {
+                        Picker("Kernel Exploit", selection: $settingsData.selectedKernelExploit) {
+                            ForEach(settingsData.kernelExploits, id: \.self) {
                                 Text($0)
                             }
-                        }
-                        Picker("puaf method", selection: $settingsData.selectedPuafMethod) {
-                            ForEach(settingsData.puafMethods, id: \.self) {
-                                Text($0)
+                        }.pickerStyle(.segmented)
+                        if settingsData.selectedKernelExploit == "KFD" {
+                            Picker("puaf pages", selection: $settingsData.selectedPuafPages) {
+                                ForEach(settingsData.puafPages, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            Picker("puaf method", selection: $settingsData.selectedPuafMethod) {
+                                ForEach(settingsData.puafMethods, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            Picker("kread method", selection: $settingsData.selectedKreadMethod) {
+                                ForEach(settingsData.kreadMethods, id: \.self) {
+                                    Text($0)
+                                }
+                            }
+                            Picker("kwrite method", selection: $settingsData.selectedKwriteMethod) {
+                                ForEach(settingsData.kwriteMethods, id: \.self) {
+                                    Text($0)
+                                }
                             }
                         }
-                        Picker("kread method", selection: $settingsData.selectedKreadMethod) {
-                            ForEach(settingsData.kreadMethods, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                        Picker("kwrite method", selection: $settingsData.selectedKwriteMethod) {
-                            ForEach(settingsData.kwriteMethods, id: \.self) {
-                                Text($0)
-                            }
-                        }
-                    }
-                })
-                Section(header: Text("Credits"), content: {
-                    CreditRow(name: "Skadz", role: "Owner, App Developer", link: URL(string: "http://discord.com/users/663877587692552222")).foregroundStyle(.red)
-                    CreditRow(name: "Lrdsnow", role: "Placeholder Role", link: URL(string: "https://github.com/Lrdsnow")).foregroundStyle(.purple)
-                    CreditRow(name: "BrocoDev", role: "Placeholder Role", link: URL(string: "https://github.com/Broco8Dev")).foregroundStyle(.orange)
-                    CreditRow(name: "iwishkem", role: "Placeholder Role", link: URL(string: "https://github.com/iwishkem")).foregroundStyle(.pink)
-                    CreditRow(name: "Gh0st", role: "Placeholder Role", link: URL(string: "https://discord.com/users/1171532630802563123")).foregroundStyle(.white)
-                    CreditRow(name: "lunginspector", role: "Placeholder Role", link: URL(string: "https://discord.com/users/1099903964801151030")).foregroundStyle(.cyan)
-                })
+                    })
+                    Section(header: Text("Credits"), content: {
+                        CreditRow(name: "Skadz", role: "Owner, App Developer", link: URL(string: "http://discord.com/users/663877587692552222")).foregroundStyle(.red)
+                        CreditRow(name: "Lrdsnow", role: "Placeholder Role", link: URL(string: "https://github.com/Lrdsnow")).foregroundStyle(.purple)
+                        CreditRow(name: "BrocoDev", role: "Placeholder Role", link: URL(string: "https://github.com/Broco8Dev")).foregroundStyle(.orange)
+                        CreditRow(name: "iwishkem", role: "Placeholder Role", link: URL(string: "https://github.com/iwishkem")).foregroundStyle(.pink)
+                        CreditRow(name: "Gh0st", role: "Placeholder Role", link: URL(string: "https://discord.com/users/1171532630802563123")).foregroundStyle(.white)
+                        CreditRow(name: "lunginspector", role: "Placeholder Role", link: URL(string: "https://discord.com/users/1099903964801151030")).foregroundStyle(.cyan)
+                    })
+                }
             }
-        }
     }
 }
 

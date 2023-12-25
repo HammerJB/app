@@ -48,34 +48,34 @@ struct JailbreakView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("HammerJB")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
-            Text(logText)
-                .font(.system(size: 14, design: .monospaced))
-                .multilineTextAlignment(.center)
-                .padding()
-                .foregroundColor(.white)
-                .cornerRadius(20)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(.pink, lineWidth: 5)
-                )
-            Button(action: {
-                logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)..."
-                jailbreak()
-                buttonEnabled = false
-                
-            }) {
-                Text("Jailbreak")
-            }.buttonStyle(.bordered).tint(.red).padding().disabled(!buttonEnabled)
-            Text("Please ensure your exploit settings are correct before jailbreaking")
-                .multilineTextAlignment(.center)
-                .padding()
-                .foregroundColor(.red)
-        }
+            VStack {
+                Text("HammerJB")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .padding()
+                Text(logText)
+                    .font(.system(size: 14, design: .monospaced))
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .foregroundColor(.white)
+                    .cornerRadius(20)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .stroke(.pink, lineWidth: 5)
+                    )
+                Button(action: {
+                    logText = "****************\nHammerJB\n****************\n\nMade by the HammerJB Team\n\nHammerJB is free software.\nIf you paid for this tool, demand a refund immediately.\n\n[*] Exploiting with \(settingsData.selectedKernelExploit)..."
+                    jailbreak()
+                    buttonEnabled = false
+                    
+                }) {
+                    Text("Jailbreak")
+                }.buttonStyle(.bordered).tint(.red).padding().disabled(!buttonEnabled)
+                Text("Please ensure your exploit settings are correct before jailbreaking")
+                    .multilineTextAlignment(.center)
+                    .padding()
+                    .foregroundColor(.red)
+            }
     }
 }
 

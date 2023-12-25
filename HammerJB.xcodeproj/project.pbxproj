@@ -22,9 +22,6 @@
 		435D22782B378D0700EA9229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		435D227A2B378D0900EA9229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435D227D2B378D0900EA9229 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		435D22872B378D0A00EA9229 /* HammerJBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBTests.swift; sourceTree = "<group>"; };
-		435D22912B378D0A00EA9229 /* HammerJBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITests.swift; sourceTree = "<group>"; };
-		435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43B89A2E2B37D31900611EE9 /* JailbreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakView.swift; sourceTree = "<group>"; };
 		43B89A302B37D34500611EE9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = infectious_ncs.mp3; path = ../../Music/infectious_ncs.mp3; sourceTree = "<group>"; };
@@ -46,8 +43,6 @@
 			children = (
 				43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */,
 				435D22752B378D0700EA9229 /* HammerJB */,
-				435D22862B378D0A00EA9229 /* HammerJBTests */,
-				435D22902B378D0A00EA9229 /* HammerJBUITests */,
 				435D22742B378D0700EA9229 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,23 +74,6 @@
 				435D227D2B378D0900EA9229 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		435D22862B378D0A00EA9229 /* HammerJBTests */ = {
-			isa = PBXGroup;
-			children = (
-				435D22872B378D0A00EA9229 /* HammerJBTests.swift */,
-			);
-			path = HammerJBTests;
-			sourceTree = "<group>";
-		};
-		435D22902B378D0A00EA9229 /* HammerJBUITests */ = {
-			isa = PBXGroup;
-			children = (
-				435D22912B378D0A00EA9229 /* HammerJBUITests.swift */,
-				435D22932B378D0A00EA9229 /* HammerJBUITestsLaunchTests.swift */,
-			);
-			path = HammerJBUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
