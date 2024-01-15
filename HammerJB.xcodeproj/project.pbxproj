@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4319F2712B47926900DE25DF /* IconSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4319F2702B47926900DE25DF /* IconSelectorView.swift */; };
 		435D22772B378D0700EA9229 /* HammerJBApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22762B378D0700EA9229 /* HammerJBApp.swift */; };
 		435D22792B378D0700EA9229 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435D22782B378D0700EA9229 /* ContentView.swift */; };
 		435D227B2B378D0900EA9229 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227A2B378D0900EA9229 /* Assets.xcassets */; };
 		435D227E2B378D0900EA9229 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435D227D2B378D0900EA9229 /* Preview Assets.xcassets */; };
+		437D00FE2B3B82C700B132AF /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437D00FD2B3B82C700B132AF /* DeveloperView.swift */; };
 		43B89A2F2B37D31900611EE9 /* JailbreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A2E2B37D31900611EE9 /* JailbreakView.swift */; };
 		43B89A312B37D34500611EE9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B89A302B37D34500611EE9 /* SettingsView.swift */; };
 		43B89A332B37E16C00611EE9 /* infectious_ncs.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4319F2702B47926900DE25DF /* IconSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSelectorView.swift; sourceTree = "<group>"; };
 		435D22732B378D0700EA9229 /* HammerJB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HammerJB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435D22762B378D0700EA9229 /* HammerJBApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HammerJBApp.swift; sourceTree = "<group>"; };
 		435D22782B378D0700EA9229 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		435D227A2B378D0900EA9229 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435D227D2B378D0900EA9229 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		437D00FD2B3B82C700B132AF /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
 		43B89A2E2B37D31900611EE9 /* JailbreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakView.swift; sourceTree = "<group>"; };
 		43B89A302B37D34500611EE9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		43B89A322B37E16B00611EE9 /* infectious_ncs.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = infectious_ncs.mp3; path = ../../Music/infectious_ncs.mp3; sourceTree = "<group>"; };
@@ -38,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4319F26F2B47924500DE25DF /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				4319F2702B47926900DE25DF /* IconSelectorView.swift */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
 		435D226A2B378D0700EA9229 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,8 @@
 		435D22752B378D0700EA9229 /* HammerJB */ = {
 			isa = PBXGroup;
 			children = (
+				4319F26F2B47924500DE25DF /* Extras */,
+				437D00FD2B3B82C700B132AF /* DeveloperView.swift */,
 				435D22762B378D0700EA9229 /* HammerJBApp.swift */,
 				435D22782B378D0700EA9229 /* ContentView.swift */,
 				43B89A2E2B37D31900611EE9 /* JailbreakView.swift */,
@@ -149,6 +163,8 @@
 			files = (
 				435D22792B378D0700EA9229 /* ContentView.swift in Sources */,
 				43B89A312B37D34500611EE9 /* SettingsView.swift in Sources */,
+				4319F2712B47926900DE25DF /* IconSelectorView.swift in Sources */,
+				437D00FE2B3B82C700B132AF /* DeveloperView.swift in Sources */,
 				43B89A2F2B37D31900611EE9 /* JailbreakView.swift in Sources */,
 				435D22772B378D0700EA9229 /* HammerJBApp.swift in Sources */,
 			);
@@ -161,7 +177,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Glyph";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -224,7 +242,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Glyph";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -279,8 +299,10 @@
 		435D22982B378D0A00EA9229 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Glyph";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -288,9 +310,12 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HammerJB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -302,18 +327,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Debug;
 		};
 		435D22992B378D0A00EA9229 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "AppIcon-Glyph";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -321,9 +352,12 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HammerJB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -335,9 +369,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = HammerJBTeam.HammerJB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
 			};
 			name = Release;
 		};

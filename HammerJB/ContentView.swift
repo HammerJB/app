@@ -6,6 +6,20 @@
 
 import SwiftUI
 
+struct BackgroundColorSetter: UIViewControllerRepresentable {
+    var backgroundColor: UIColor
+
+    func makeUIViewController(context: Context) -> UIViewController {
+        let viewController = UIViewController()
+        viewController.view.backgroundColor = backgroundColor
+        return viewController
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
+        uiViewController.view.backgroundColor = backgroundColor
+    }
+}
+
 struct ContentView: View {
     @ObservedObject var settingsData: SettingsData
     
@@ -19,13 +33,16 @@ struct ContentView: View {
                 JailbreakView(settingsData: settingsData)
                     .tabItem {
                         Label("Jailbreak", systemImage: "lock.open.fill")
-                    }.background(Color.black)
+                    }
                 SettingsView(settingsData: settingsData)
                     .tabItem {
-                        Label("Settings",
-                              systemImage: "gear")
-                    }.background(Color.black)
-            }.overlay(TabBarDivider(), alignment: .top).background(Color.black).edgesIgnoringSafeArea(.all).navigationBarHidden(true).safeAreaInset(edge: .top)
+                        Label("Settings", systemImage: "gearshape.fill")
+                    }
+                DeveloperView(settingsData: settingsData)
+                    .tabItem {
+                        Label("Developer", systemImage: "exclamationmark.triangle.fill")
+                    }
+            }.overlay(TabBarDivider(), alignment: .top).background(BackgroundColorSetter(backgroundColor: UIColor.white)).edgesIgnoringSafeArea(.all)
     }
 }
 
